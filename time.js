@@ -7,4 +7,7 @@ const options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
     time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
     date = a.toLocaleDateString(undefined, options);
     document.getElementById("time").innerHTML = time + '<br>on ' + date;
- }, 1000);       
+ }, 1000);  
+ document.getElementById("mybtn").onclick = function() {
+    location.href = "https://time.is/"
+ };   
